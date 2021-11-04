@@ -57,6 +57,11 @@ module.exports = {
         node: true,
         mocha: true
       }
-    }
+    },
+    {
+      // test files
+      files: ['tests/**/*-test.{js,ts}'],
+      extends: ['plugin:qunit/recommended'],
+    },
   ]
 };
